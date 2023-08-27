@@ -1,6 +1,155 @@
-<meta charset="UTF-8">
-<meta name="description" content="failedtrades.lol">
-<meta name="keywords" content="card, info">
-<meta name="author" content="failedtrades.">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<h1>my card soon to be built</h1>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+<style>
+  body{
+    background-image: url('https://media.giphy.com/media/mlBDoVLOGidEc/giphy.gif');
+    background-size: cover;
+  }
+  #holder {
+    visibility: initial;
+    margin-top: 5%;
+    margin-left: 30%;
+    width: 40%;
+    height: 150px;
+    background-color: #303434;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #303434;
+    border-width: 5px;
+    transition: 0.2s;
+  }
+  #discord {
+    background: none;
+    border: none;
+    background-color: none;
+    width: 130px;
+    height: 130px;
+    cursor: pointer;
+  }
+  
+  #discord img {
+    width: 130px;
+    height: 130px;
+    transition: 0.2s;
+  }
+  #discord img:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+  	-webkit-transition-duration: 0.2s;
+  	-ms-transition-duration: 0.2s;
+  	-moz-transition-duration: 0.2s;
+  }
+  #discord div{
+    position: relative;
+    bottom: 20%;
+    left: 5%;
+    font-weight: 700;
+    font-size: 25px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  #spotify {
+    background: none;
+    border: none;
+    background-color: none;
+    width: 130px;
+    height: 130px;
+    cursor: pointer;
+  }
+  
+  #spotify img {
+    position: relative;
+    bottom: 20%;
+    left: 3%;
+    width: 80px;
+    height: 80px;
+    transition: 0.2s;
+  }
+  #spotify img:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+  	-webkit-transition-duration: 0.2s;
+  	-ms-transition-duration: 0.2s;
+  	-moz-transition-duration: 0.2s;
+  }
+  #spotify div{
+    position: relative;
+    bottom: 20%;
+    left: 5%;
+    font-weight: 700;
+    font-size: 25px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+  }
+  #dtag {
+    visibility: hidden;
+    position: absolute;
+    background-color: #303434;
+    width: 40.2%;
+    height: 20px;
+    bottom: 73%;
+    left: 30.15%;
+    transition: .2s;
+    border-radius: 10px;
+  }
+
+  #dtagtitle {
+    visibility: hidden;
+    position: relative;
+    top: 10%;
+    left: 5%;
+    font-weight: 700;
+    font-size: 25px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+    
+  	
+  	
+  }
+  #dtagtext {
+    visibility: hidden;
+    position: relative;
+    top: 10%;
+    left: 5%;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+    
+  	
+  	
+  }
+  
+</style>
+<body>
+  <audio loop autoplay>
+    <source src="src/sound.mp3" type="audio/mpeg">
+     Your browser does not support the audio element.
+  </audio>
+  <div id="holder">
+    <button id="discord" onclick="discordbtn()"><img src="src/discord.png"></img><div>Discord</div></button>
+    <button id="spotify" onclick="spotifybtn()"><img src="src/spotify.png"></img><div>Spotify</div></button>
+  </div>
+  <div id="dtag">
+    <a id="dtagtitle"></a>
+    <div id="dtagtext"></div>
+    
+  </div>
+  <script src="src/script.js"></script>
+  
+</body>
+
+</html>
